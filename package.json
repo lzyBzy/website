@@ -1,0 +1,32 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@zeit/next-css": "^1.0.1",
+    "@zeit/next-less": "^1.0.1",
+    "@zeit/next-sass": "^1.0.1",
+    "animate.css": "^3.7.1",
+    "less": "^3.9.0",
+    "next": "^8.1.0",
+    "node-sass": "^4.12.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "styled-components": "^4.2.1",
+    "wow.js": "^1.2.2"
+  },
+  "devDependencies": {
+    "file-loader": "^4.0.0",
+    "url-loader": "^2.0.0"
+  }
+}
