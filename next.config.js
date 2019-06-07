@@ -12,7 +12,9 @@ module.exports = withCSS(withSass({
           limit: 100000
         }
       }
-    })
-    return config
+    });
+    
+    return config;
   }
-}))
+}));
+

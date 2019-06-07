@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
+import CanvasBlock from '../components/matrix';
 
 const LeftBlock = () => (
     <React.Fragment>    
-        <h1 style={{ color: 'white', marginBottom: 0}} className="animated fadeInUp delay-1s">
+        <h1 style={{ color: 'white', marginBottom: 0, zIndex: 2}} className="animated fadeInUp delay-1s">
             Crafting Innovative Mobile and Software Solutions
         </h1>
-        <h4 style={{ color: 'white', marginTop: 5}} className="animated fadeInUp delay-1s">
+        <h4 style={{ color: 'white', marginTop: 5, zIndex: 2}} className="animated fadeInUp delay-1s">
             for startups & enterprise that hogs the limelight.
         </h4>
         <style global jsx>{`
@@ -53,7 +54,7 @@ const LeftBlock = () => (
             filter: blur(10px);
           }
       `}</style>
-        <button className="btn-cp animated swing delay-2s" style={{ marginTop: 10 }}>
+        <button className="btn-cp animated swing delay-2s" style={{ marginTop: 10, zIndex: 2 }}>
             INQUIRE NOW
         </button> 
     </React.Fragment>
@@ -64,7 +65,7 @@ const RightBlock = () => (
         className="animated fadeInRight delay-1s"
         src="/static/images/svg/banner_img_right.svg"
         alt="Code Prism Fisrt Banner"
-        style={{ minHeight: 400, height: 'calc(100vh - 150px)'}}
+        style={{ minHeight: 400, height: 'calc(100vh - 150px)', zIndex: 2}}
     />
 );
 
@@ -73,8 +74,7 @@ const firstBlock = {
     height: '100vh', 
     display: 'flex',
     flexDirection: 'row',
-    paddingLeft: '5%',
-    paddingRight: '5%'
+    width: 'calc(100vw - 20px)'
 };
 
 const textBlock = {
@@ -83,8 +83,9 @@ const textBlock = {
     flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'flex-start',
-    height: 'calc(100vh - 64px)',
-    marginTop: '64px'
+    height: 'calc(100vh - 70px)',
+    paddingLeft: '5%',
+    marginTop: '70px'
 };
 
 const imageBlock = {
@@ -93,12 +94,34 @@ const imageBlock = {
     flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'flex-end',
-    height: 'calc(100vh - 64px)',
-    marginTop: '64px'
+    height: 'calc(100vh - 70px)',
+    marginTop: '70px',
+    paddingRight: '5%',
 };
 
 const FirstCombo = () => (
-   <div style={firstBlock}>
+   <div style={firstBlock} >
+       <div style={{ position: 'absolute'}}>
+            <CanvasBlock />
+       </div>
+       <style global jsx>{`
+         #overlay {
+            position: absolute; /* Sit on top of the page content */
+            display: block; /* Hidden by default */
+            width: 100%; /* Full width (cover the whole page) */
+            height: 'calc(100vh - 50px)'; /* Full height (cover the whole page) */
+            top: 0; 
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(closest-side, rgba(0,0,0,0.5) , #1b1c1d);
+            z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+            cursor: pointer; /* Add a pointer on hover */
+            display: block;
+          }
+        `}
+        </style>
+       <div id="overlay" style={{ height: '100vh' }}></div>
        <div style={textBlock}>
             <LeftBlock />
        </div>

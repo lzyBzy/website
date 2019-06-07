@@ -102,25 +102,25 @@ const HeaderBlock = () => (
 const TechStack = () => (
     <div textAlign="center" style={{ marginLeft: '50%', width: '50%', marginRight: 30, display: 'flex', flexDirection: 'row' }}>      
         <div className="wow fadeInUp delay-1s" style={{  height: 180, padding: 0, width: 180, textAlign:'center' }}>
-            <img src="/static/images/png/logo_react.png" bordered style={{ background: 'white', padding: 6, height: 80, width: 80, borderRadius: 45  }} />
+            <img src="/static/images/png/logo_react.png"  style={{ background: 'white', padding: 6, height: 80, width: 80, borderRadius: 45  }} />
             <h3 style={{ color: 'white'}}>
                 React Native
             </h3>
         </div>
         <div className="wow fadeInUp delay-1s" style={{  height: 180, padding: 0, width: 180, textAlign:'center' }}>
-            <img src="/static/images/png/flutter.png" bordered style={{ background: 'white', padding: 6, height: 80, width: 80, borderRadius: 45  }} />
+            <img src="/static/images/png/flutter.png"  style={{ background: 'white', padding: 6, height: 80, width: 80, borderRadius: 45  }} />
             <h3 style={{ color: 'white'}}>
                 Flutter
             </h3>
         </div>
         <div className="wow fadeInUp delay-1s" style={{  height: 180, padding: 0, width: 180, textAlign:'center' }}>
-            <img src="/static/images/png/android.png" bordered style={{ background: 'white', padding: 6, height: 80, width: 80, borderRadius: 45  }} />
+            <img src="/static/images/png/android.png"  style={{ background: 'white', padding: 6, height: 80, width: 80, borderRadius: 45  }} />
             <h3 style={{ color: 'white'}}>
                 Android
             </h3>
         </div>
         <div className="wow fadeInUp delay-1s" style={{  height: 180, padding: 0, width: 180, textAlign:'center' }}>
-            <img src="/static/images/png/swift.png" bordered style={{ background: 'white', padding: 6, height: 80, width: 80, borderRadius: 45  }} />
+            <img src="/static/images/png/swift.png"  style={{ background: 'white', padding: 6, height: 80, width: 80, borderRadius: 45  }} />
             <h3 style={{ color: 'white'}}>
                 Swift
             </h3>
