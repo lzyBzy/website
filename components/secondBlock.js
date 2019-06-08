@@ -1,24 +1,24 @@
 import React, { Component } from 'react';
-// import SecondBlockHeader from './HeaderBlock';
 
 const secondBlockBackGround = {
-    backgroundImage: 'url("/static/images/svg/block2_bg.svg")',
+    backgroundImage: 'url("/static/images/svg/wave_smaller.svg")',
     width: '100%',
-    height: '1070px',
+    height: '750px',
     display: 'flex',
     flexDirection: 'column',
     backgroundRepeat: 'no-repeat', 
     backgroundPosition: '50%',
     backgroundColor: '#1b1c1d',
+    backgroundSize: 'cover',
     position: 'relative'
 }
   
-const clip_Block = {
+const clip_block = {
     position: 'absolute',
     top: 0,
     left: 0,
     width: '100%',
-    height: '1070px',
+    height: '750px',
     backgroundRepeat: 'no-repeat',
     backgroundImage: 'url("/static/images/svg/curve_clip.svg")',
     backgroundSize: 'cover',
@@ -26,12 +26,12 @@ const clip_Block = {
     zIndex: 3
 }
 
-const mobile_Block = {
+const mobile_block = {
     position: 'absolute',
     top: 0,
     left: 0,
     width: '100%',
-    height: '1070px',
+    height: '750px',
     backgroundRepeat: 'no-repeat',
     backgroundImage: 'url("/static/images/png/sample_mobile_app.png")',
     backgroundPosition: '0 100%',
@@ -130,14 +130,14 @@ const TechStack = () => (
 
 const SecondBlock = () => (
     <div style={secondBlockBackGround}>
-        <div style={mobile_Block}></div>
+        <div style={mobile_block}></div>
         <div style={{ width: '100%', height: 570, marginTop: 100 }}>
             <HeaderBlock />
         </div>
         <div style={{ width: '100%', height: 500, textAlign: 'right'}}>
             <TechStack  />
         </div>
-        <div style={clip_Block}></div>
+        <div style={clip_block}></div>
     </div>
 )
 

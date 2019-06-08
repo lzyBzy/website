@@ -3,13 +3,11 @@ export const GLOBAL_WINDOW = (typeof self === 'object' && self.self === self && 
 
 const headerStyle = {
     height: '70px',
-    // borderBottom: '1px solid #454545',
     position: 'fixed',
     top: 0,
     right: 0,
     left: 0,
     zIndex: 10,
-    //boxShadow: '0 2px 5px 0 rgba(0,0,0,.3)',
     background: 'transparent',
     width: '100%',
     display: 'flex',
@@ -69,23 +67,9 @@ class Header extends React.Component {
         } else {
             crossed = false;   
         }
-
-        console.log("CROSSED", window.pageYOffset);
-        console.log("CROSSED--1", crossed);
-
-        // if(window.scrollTop() > 100) {
-        //     crossed = true;
-        // } else {
-        //     //remove the background property so it comes transparent again (defined in your css)
-        //    crossed = false;
-        // }
         this.setState({
             crossed
         });
-
-       
-            
-        
     }
 
     componentDidMount() {
@@ -98,11 +82,10 @@ class Header extends React.Component {
 
     render() {
         const { crossed } = this.state;
-        console.log("CROSSED", crossed);
         return (
             <div style={crossed ? scrolledHeaderStyle : headerStyle}>
                 <div style={leftMenu}>
-                    <img src="/static/images/svg/logo_code_prism.svg" alt="Code prism" style={{ width: 250, height: 60, marginTop: 10 }}/>
+                    <img src="/static/images/svg/logo_code_prism.svg" alt="Code prism" style={{ width: 250, height: 60, marginTop: 10, marginBottom: 10 }}/>
                 </div>
                 <style global jsx>{`
                     .header-btn-cp{
