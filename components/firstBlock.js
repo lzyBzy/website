@@ -3,10 +3,10 @@ import CanvasBlock from '../components/matrix';
 
 const LeftBlock = () => (
     <React.Fragment>    
-        <h1 style={{ color: 'white', marginBottom: 0, zIndex: 2}} className="animated fadeInUp delay-1s">
+        <h1 style={{ color: 'white', marginBottom: 0, zIndex: 2}} className="animated fadeInUp ">
             Crafting Innovative Mobile and Software Solutions
         </h1>
-        <h4 style={{ color: 'white', marginTop: 5, zIndex: 2}} className="animated fadeInUp delay-1s">
+        <h4 style={{ color: 'white', marginTop: 5, zIndex: 2}} className="animated fadeInUp ">
             for startups & enterprise that hogs the limelight.
         </h4>
         <style global jsx>{`
@@ -62,7 +62,7 @@ const LeftBlock = () => (
 
 const RightBlock = () => (
     <img 
-        className="animated fadeInRight delay-1s"
+        className="animated fadeInRight "
         src="/static/images/svg/banner_img_right.svg"
         alt="Code Prism Fisrt Banner"
         style={{ minHeight: 400, height: 'calc(100vh - 150px)', zIndex: 2}}
