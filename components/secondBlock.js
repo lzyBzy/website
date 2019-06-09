@@ -49,7 +49,6 @@ const third_block = {
     zIndex: 3,
     position: 'absolute',
     marginTop: '750px',
-    width: '100%', 
     paddingLeft: '5%',
     paddingRight: '5%',
 };
@@ -116,7 +115,7 @@ const SecondBlockHeader = () => (
 )
 
 const TechStack = () => (
-    <div textAlign="center" style={{ marginLeft: '50%', width: '50%', marginRight: 30, display: 'flex', flexDirection: 'row' }}>      
+    <div style={{ marginLeft: '50%', width: '50%', marginRight: 30, display: 'flex', flexDirection: 'row' }}>      
         <div className="wow fadeInUp" style={{  height: 150, padding: 0, width: 180, textAlign:'center' }}>
             <img src="/static/images/png/logo_react.png"  style={{ background: 'white', padding: 6, height: 70, width: 70, borderRadius: 45  }} />
             <h3 style={{ color: 'white'}}>
@@ -221,7 +220,7 @@ const SecondBlock = () => (
                 <ThirdBlockHeader />
             </div>
             <div style={{ width: '70%', textAlign: 'right'}}>
-              <img src="/static/images/png/iMac_frame.png" style={{ width: '90%' }}/>
+              <img src="/static/images/png/iMac_frame.png" style={{ width: '95%' }}/>
             </div>
         </div>
     </div>
